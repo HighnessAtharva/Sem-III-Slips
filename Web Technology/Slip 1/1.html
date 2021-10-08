@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <script>
+        function volume() {
+            var t_val = document.getElementById("txt").value;
+            var rad = parseInt(t_val);
+            var vol = (4.0 / 3.0) * Math.PI * Math.pow(rad, 3);
+            document.getElementById('vol').value = vol;
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>JavaScript Program</legend>
+            <table border="3" bgcolor="black" style="color: aliceblue;">
+                <tr>
+                    <td style="padding:20 20 20 20">
+                        <p>Input radius value and get the volume of a sphere.</p>
+                        Radius
+                        <br>
+                        <input type="text" id="txt">
+                        <br> Volume <br>
+                        <input id="vol" placeholder="0.0000000000"><br><br>
+                        <input type="button" value="Find volume" onclick="volume()">
+                        <button type="reset" value="Reset">Reset</button>
+                    </td>
+                </tr>
+            </table>
+    </form>
+    </fieldset>
+</body>
+
+</html>

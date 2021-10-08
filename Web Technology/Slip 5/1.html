@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <script>
+        function perfectcheck() {
+            var num, sum = 0,
+                i;
+            num = Number(document.getElementById("M").value);
+            for (i = 1; i < num; i++) {
+                if (num % i == 0) {
+                    sum = sum + i;
+                }
+            }
+            if (num == sum) {
+                alert(num + "perfect number");
+            } else {
+                alert(num + "not perfect number");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <input id="M">
+    <button onclick="perfectcheck()">click</button>
+</body>
+
+</html>

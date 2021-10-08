@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+
+<head>
+    <script>
+        function armstr() {
+            var arm = 0,
+                a, b, c, d, num;
+            num = Number(document.getElementById("no_input").value);
+            multi = document.getElementById('pPrint');
+
+            temp = num;
+            while (temp > 0) {
+                a = temp % 10;
+                temp = parseInt(temp / 10);
+                arm = arm + a * a * a;
+            }
+            if (arm == num) {
+                multi.innerHTML += (num + " Armstrong number" + "<br>");
+            } else {
+                multi.innerHTML += (num + " Not Armstrong number" + "<br>");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>JavaScript Program</legend>
+            <table border="3" bgcolor="black" style="color: aliceblue;">
+                <tr>
+                    <td style="padding:20 20 20 20">
+                        <p>Q. Write a java script program to accept a number from user and check whether it is Armstrong number or not. </p>
+                        Enter any Number: <input id="no_input">
+                        <input type="button" value="Click" onclick="armstr()">
+                        <button type="reset" value="Reset">Reset</button>
+                        <p id="pPrint"></p>
+                    </td>
+                </tr>
+            </table>
+    </form>
+    </fieldset>
+</body>
+
+</html>

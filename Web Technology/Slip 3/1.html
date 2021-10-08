@@ -1,0 +1,20 @@
+<html>
+
+<head>
+    <script>
+        function mul() {
+            var num, sum = 0,
+                i, str;
+            num = Number(document.getElementById('v').value);
+            str = num.toString();
+            for (i = 0; i < str.length; i++) {
+                sum += parseInt(str.charAt(i));
+            }
+            alert(sum);
+        }
+    </script>
+</head>
+<input id="v">
+<button onclick="mul()">click</button>
+
+</html>
