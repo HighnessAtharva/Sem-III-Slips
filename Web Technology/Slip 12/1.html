@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <script>
+        function validate() {
+            if (document.StudentRegistration.textnames.value == "") {
+                alert("Please provide your Name!");
+                document.StudentRegistration.textnames.focus();
+                return false;
+            }
+
+            if (document.StudentRegistration.paddress.value == "") {
+                alert("Please provide your Postal Address!");
+                document.StudentRegistration.paddress.focus();
+                return false;
+            }
+
+            if (document.StudentRegistration.pincode.value == "" ||
+                isNaN(document.StudentRegistration.pincode.value) ||
+                document.StudentRegistration.pincode.value.length != 6) {
+                alert("Please provide a pincode in the format ######.");
+                document.StudentRegistration.pincode.focus();
+                return false;
+            }
+            return (true);
+        }
+    </script>
+</head>
+
+<body>
+    <form action="#" name="StudentRegistration" onsubmit="return(validate());">
+
+        <table cellpadding="2" width="20%" align="center" cellspacing="2">
+
+            <tr>
+                <td colspan=2>
+                    <center>
+                        <font size=4><b>Student Registration Form</b></font>
+                    </center>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Name</td>
+                <td><input type=text name=textnames id="textname" size="30"></td>
+            </tr>
+
+
+            <tr>
+                <td>Address</td>
+                <td><input type="text" name="paddress" id="paddress" size="30"></td>
+            </tr>
+
+            <tr>
+                <td>PinCode</td>
+                <td><input type="text" name="pincode" id="pincode" size="30"></td>
+            </tr>
+
+            <tr>
+                <td><input type="reset"></td>
+                <td colspan="2"><input type="submit" value="Submit Form" /></td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+
+</html>

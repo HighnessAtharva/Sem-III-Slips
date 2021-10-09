@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <script>
+        function saurabh() {
+            var start = document.getElementById("start").value;
+            var end = document.getElementById("end").value;
+            var oddNums = "<br>Odd Numbers:<br>";
+            for (i = start; i <= end; i++) {
+                if (i % 2 != 0) {
+                    oddNums += i + "<br>";
+                }
+            }
+            document.getElementById("result").innerHTML = oddNums;
+        }
+    </script>
+</head>
+Start: <input id="start"> End: <input id="end">
+<button onclick="saurabh()">click</button>
+<div id="result"></div>
+
+</html>

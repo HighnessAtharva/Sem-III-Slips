@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <script>
+        function calcPower() {
+            var b = document.getElementById("pow").value;
+            var e = document.getElementById("exp").value;
+            var res;
+            res = PowerOfNumber(b, e);
+            document.getElementById("res").innerHTML = res;
+        }
+
+        function PowerOfNumber(b, e) {
+
+            var i, pow = 1;
+            for (i = 0; i < e; i++) {
+
+                pow = pow * b;
+            }
+            return pow;
+        }
+    </script>
+</head>
+
+<body>
+    <input type="number" id="pow" placeholder="Base">
+    <input type="number" id="exp" placeholder="Exponent">
+    <button type="submit" onclick="calcPower()">Submit</button> Result: <span id="res"></span>
+
+</body>
+
+</html>

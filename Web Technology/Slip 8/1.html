@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        function displayCount() {
+            setTimeout(function() {
+                var str = document.getElementById('str1').value;
+                var letter = document.getElementById('letter1').value;
+                letter = letter[letter.length - 1];
+
+                var lCount;
+                for (var i = lCount = 0; i < str.length; lCount += (str[i++] == letter));
+                document.querySelector('p').innerText = lCount;
+                return lCount;
+            }, 50);
+        }
+    </script>
+    Enter String: <input type="text" id="str1"><br><br> Enter Letter: <input onkeypress="displayCount()" type="text" id="letter1"><br><br>
+    <button onclick="displayCount()">Click for Result</button><br><br> result=
+    <p></p>
+</body>
+
+</html>

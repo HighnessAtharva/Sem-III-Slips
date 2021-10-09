@@ -1,0 +1,26 @@
+<html>
+
+<body>
+    <script>
+        function Sum() {
+            var sum = 0,
+                i, str, num1;
+            num1 = Number(document.getElementById("n").value);
+
+            str = num1.toString();
+            sum = 0;
+            for (i = 0; i < str.length; i++) {
+                sum += parseInt(str.charAt(i), 10);
+            }
+            window.alert(sum);
+        }
+    </script>
+    </head>
+
+    <body>
+        Enter a Number : <input type="text" id="n"><br/>
+        <button onclick="Sum()"> sum is </button>
+
+        <body>
+
+</html>
