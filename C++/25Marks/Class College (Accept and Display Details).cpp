@@ -1,6 +1,6 @@
 /* Slip no : 11_2 Create a class College containing data members as College_Id, College_Name,
 Establishment_year, University_Name.  Write a C++ program with following member functions:
-i. To accept ‘n’ College details
+i. To accept â€˜nâ€™ College details
 ii. To display College details of a specified University
 iii. To display College details according to a specified establishment year
  (Use Array of Object and Function overloading) */
@@ -20,7 +20,7 @@ cout<<"\n Enter id : ";
 cin>>id;
 cout<<"\n Enter name : ";
 cin>>name;
-cout<<"\n Enter univercity name : ";
+cout<<"\n Enter university name : ";
 cin>>uname;
 cout<<"\n Enter year : ";
 cin>>yr;
@@ -29,7 +29,7 @@ cin>>yr;
 
 void display()
 {
-cout<<"\n id = "<<id<<"\n name = "<<name<<"\n Univercity name = "<<uname<<"\n year = "<<yr<<endl;
+cout<<"\n id = "<<id<<"\n name = "<<name<<"\n University name = "<<uname<<"\n year = "<<yr<<endl;
 }
 
 int display(char unin[])
