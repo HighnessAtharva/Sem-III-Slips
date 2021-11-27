@@ -20,6 +20,7 @@ void display()
 {
   cout.setf(ios::left,ios::adjustfield);
   cout.width(20);
+  cout.precision(2);
   cout<<"\n a="<<a;
 }
 friend void swap(class1 &,class2 &);
@@ -38,6 +39,7 @@ void display()
 {
   cout.setf(ios::left,ios::adjustfield);
   cout.width(20);
+   cout.precision(2);
   cout<<"\n b="<<b;
 }
 friend void swap(class1 &,class2 &);
@@ -49,21 +51,19 @@ void swap(class1 &ob1,class2 &ob2)
   temp=ob1.a;
   ob1.a=ob2.b;
   ob2.b=temp;
-
 }
 
 int main()
 {
   class1 ob1;
   class2 ob2;
-
   ob1.accept();
   ob2.accept();
   ob1.display();
   ob2.display();
   swap(ob1,ob2);
-  cout<<"\n Ater swapping :\n";
+  cout<<"\n After swapping: ";
   ob1.display();
   ob2.display();
- return 0;
+  return 0;
 }
