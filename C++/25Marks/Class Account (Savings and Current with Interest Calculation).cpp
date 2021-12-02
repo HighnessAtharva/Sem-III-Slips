@@ -91,7 +91,7 @@ int main()
                                                                 for(i=0;i<n;i++)
                                                                 {
                                                                                 c[i].getdata();
-                                                                                c[i].getdata();
+
                                                                 }
                                                                 break;
                                                 case 2 : cout<<"\n Enter how many saving Account holders ? ";
@@ -99,18 +99,19 @@ int main()
                                                                 for(i=0;i<n1;i++)
                                                                 {
                                                                                 s[i].getdata();
-                                                                                s[i].cal();
+
                                                                 }
                                                                 break;
                                                 case 3 : cout<<"\n Details of curent account holders : ";
                                                                 for(i=0;i<n;i++)
-                                                                {              c[i].cal();
-                                                                                c[i].display();
+                                                                {           c[i].cal();
+                                                                            c[i].display();
                                                                 }
                                                                 break;
                                                 case 4 : cout<<"\n Details of saving account holders : ";
                                                                 for(i=0;i<n1;i++)
                                                                 {
+                                                                                s[i].cal();
                                                                                 s[i].display();
                                                                 }
                                                                 break;
