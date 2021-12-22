@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function Upper() {
+            let text = document.getElementById("user").value;
+            let result = text.toLowerCase();
+            document.getElementById("output").innerHTML = result;
+            return false;
+        }
+    </script>
+</head>
+
+<body>
+    <form onsubmit="return Upper();">
+        Enter an UPPERCASE string:
+        <input type="text" name="userInput" id="user">
+        <input type="submit">
+
+    </form>
+    <div id="output"></div>
+</body>
+
+</html>

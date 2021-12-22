@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <title>Nhung rac roi ko hieu</title>
+    <script type="text/javascript">
+        function getvalue(list) {
+            while (list.options.length) list.options[list.selectedIndex].value = null;
+            var value = list.options[list.selectedIndex].value;
+            document.write(value);
+            document.bgColor = value;
+        }
+    </script>
+</head>
+
+<body bgColor="lavender">
+    Here is the list for you to Change the bgColor!
+    <br/>
+    <select name="list1" onchange="getvalue(this)">
+<option value="green">Green </option>
+<option value="orange">Orange </option>
+<option value="yellow">Yellow </option>
+<option value="pink">Pink </option>
+</select>
+</body>
+
+</html>

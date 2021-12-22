@@ -1,0 +1,2 @@
+Copy the HTML + PHP file to C:/Xampp/htdocs folder and open the HTML file in browser but not using the default path. 
+Force use the localhost path. 

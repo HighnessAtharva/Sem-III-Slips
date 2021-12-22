@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <script>
+        function display() {
+            var a = document.forms["pay"]["emp"].value;
+            var b = document.forms["pay"]["dept"].value;
+            var c = document.forms["pay"]["des"].value;
+            var d = document.forms["pay"]["bs"].value;
+            var e = document.forms["pay"]["hra"].value;
+            var f = document.forms["pay"]["da"].value;
+            var g = +d + +e + +f;
+            document.write("Name:" + a + "<hr>Department:" + b + "<hr>Designation<hr>" + c + "Total Salary (Basic+ HRA+ DA)<hr>" + g);
+        }
+    </script>
+</head>
+
+<body>
+    <h1 align="Center">
+        Payslip
+    </h1>
+    <form name="pay" method="post" onsubmit="display()">
+        Name of Employee:<input type="text" name="emp"></input>
+        <hr> Department:
+        <input type="text" name="dept"></input>
+        <hr> Designation:
+        <input type="text" name="des"></input>
+        <hr> Basic Salary:<input type="text" name="bs"></input>
+        <hr> HRA:
+        <input type="text" name="hra"></input>
+        <hr> DA:
+        <input type="text" name="da"></input>
+        <hr>
+        <input type="Submit"></input>
+        <hr>
+</body>
+
+</html>

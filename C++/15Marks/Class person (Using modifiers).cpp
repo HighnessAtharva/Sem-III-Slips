@@ -6,6 +6,15 @@
 #include<conio.h>
 //#include<manip.h>
 using namespace std;
+
+ostream&udefined(ostream&ostrObj)
+{
+cout.width(10);
+cout.fill('*');
+cout.right;
+return ostrObj;
+}
+
 class person
 {
                 char p_name[20],p_city[10];
@@ -27,22 +36,23 @@ class person
                                 cout<<"\n\n*************OUTPUT******************\n";
                                 cout<<"\nperson name =\t"<<p_name;
                                 cout<<"\nperson city =\t"<<p_city;
-                                //cout<<"\npersons contact number is\t"<<p_c_no;
-                                cout.width(10);
-                                cout.fill('*');
-                                cout<<endl<<p_c_no;
+                                cout<<"\npersons contact number is\t";
+
+                                cout<<endl<<udefined<<p_c_no;
                                 //cout<<cout.setw(10)<<p_c_no;
                 }
 };
+
+
 int main()
 {
                 int i;
                 person p[5];
-                for(i=0;i<1;i++)
+                for(i=0;i<5;i++)
                 {
                                 p[i].getdata();
                 }
-                for(i=0;i<1;i++)
+                for(i=0;i<5;i++)
                 {
                                 p[i].display();
                 }
