@@ -14,7 +14,7 @@ class integer
                                 no=num;
                 }
 
-                integer operator++()
+                integer operator++()  //pre increment
                 {
                                 ++no;
                                 return *this;
