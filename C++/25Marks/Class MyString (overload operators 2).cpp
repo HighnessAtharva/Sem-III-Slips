@@ -24,7 +24,7 @@ strcpy(str,s);
 }
 void display()
 {
-cout<<"\nstring = "<<str;
+cout<<"\n Case-Switched String is: "<<str;
 }
 void operator !()
 {
@@ -55,18 +55,18 @@ int main()
 
 int i;
 char str[30];
-cout<<"\n Enter string : ";
+cout<<"\nEnter string: \t";
 cin>>str;
 mystring m(str);
 m.display();
 !m;
 m.display();
-cout<<"\n Enter index : ";
+cout<<"\nEnter index: ";
 cin>>i;
 char ch = m[i];
 if(ch!='_')
-cout<<"\n Chracter at given position "<<ch;
+cout<<"\nChracter at given position: "<<ch;
 else
-cout<<"\n Invalid index ";
-getch();
+cout<<"\nInvalid index";
+
 }

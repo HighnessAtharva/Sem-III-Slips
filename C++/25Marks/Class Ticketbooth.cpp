@@ -6,24 +6,30 @@ To increment the  No_of_people_visited  and Total_amount_collected if tickets ha
 To display both totals     */
 #include<conio.h>
 #include<iostream>
+#include<cstring>
 using namespace std;
 class ticket
 {
 static int cnt;
 static int amt;
 char name[20];
+char response[2];
 public:
 void accept()
 {
-cout<<"\ Enter name:";
+cout<<"Thank you for visiting the Ticket Booth.\nEnter name:";
 cin>>name;
 cnt++;
+cout<<"\nWould you like to book ticket? (Y/N)";
+cin>>response;
+if (strcmp(response, "Y")==0){
 amt=amt+5;
+}
 }
 
 void display()
 {
-cout<<"\n Name="<<name<<"\t no of persons="<<cnt<<"\t amount collected="<<amt;
+cout<<"\nName of the Attendee="<<name<<"\nNo of people who just visited the booth="<<cnt<<"\nNo of people who booked the ticket="<<(amt/5)<<"\nTotal amount collected="<<amt<<endl;
 }
 
 };
@@ -34,7 +40,7 @@ int main()
 int n,i;
 ticket ob[20];
 
-cout<<"\n Enter n of persons";
+cout<<"\nEnter no of people\t";
 cin>>n;
 for(i=0;i<n;i++)
 {

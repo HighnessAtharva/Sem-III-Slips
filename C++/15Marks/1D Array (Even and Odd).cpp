@@ -18,25 +18,28 @@ class dynamic
                                 ptr=new int[size];
                                 for(int i=0;i<size;i++)
                                 {
-                                                cout<<"enter element";
+                                                cout<<"enter element: \t";
                                                 cin>>ptr[i];
                                 }
                 }
                 void display()
                 {
-                                cout<<"elements are";
+                                cout<<"\n Entered Elements are: ";
                                 for(int i=0;i<size;i++)
                                 {
                                                 cout<<ptr[i]<<"\t";
                                 }
                 }
 
-                void evnodd()
+                void evenodd()
                 {
                                 int i;
-                                cout<<"even nos are : \t";
+                                cout<<"\n Even nos are : \t";
                                 for(i=0;i<size;i++)
                                 {
+                                                if(ptr[i]==0){
+                                                    continue;
+                                                }
                                                 if(ptr[i]%2==0)
                                                 {
                                                                 cout<<ptr[i];
@@ -69,7 +72,7 @@ int main()
                 cin>>n;
                 dynamic d(n);
                 d.display();
-                d.evnodd();
+                d.evenodd();
                 return 0;
 }
 
