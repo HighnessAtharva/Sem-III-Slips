@@ -78,14 +78,14 @@
 <body>
     <h1 style="text-align: center;">REGISTRATION FORM</h1>
     <form name="RegForm" onsubmit="return func()" method="post">
-        <p>Name: <input type="text" size="65" name="Name" /></p>
+        <p>Name: <input type="text" placeholder="Madal" size="65" name="Name" required/></p>
         <br />
         <p>Address: <input type="text" size="65" name="Address" />
         </p>
         <br />
-        <p>E-mail Address: <input type="text" size="65" name="EMail" /></p>
+        <p>E-mail Address: <input type="text" size="65" name="EMail" required/></p>
         <br />
-        <p>Password: <input type="text" size="65" name="Password" /></p>
+        <p>Password: <input type="text" size="65" placeholder="SlipNo12" name="Password" required/></p>
         <br />
         <p>Telephone: <input type="text" size="65" name="Telephone" /></p>
         <br />
@@ -101,7 +101,7 @@
                 </select>
         </p>
         <br />
-        <br />
+        <br /> Interest in Course: <input type="range" id="Interest" name="points" min="0" max="10"><br>
         <p>Comments: <textarea cols="55" name="Comment"> </textarea></p>
         <p>
             <input type="submit" value="send" name="Submit" />
